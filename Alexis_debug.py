@@ -20,3 +20,14 @@ while player1.is_alive() and player2.is_alive():
 
     damage = player2.attack(player1)
     print(player2.name + " hits " + player1.name + " for " + str(damage))
+
+
+# Import the winning code when it's ready (didn't test yet):
+
+# Declaring the winner
+if player1.is_alive():
+    print(player1.name + " wins!")
+elif player2.is_alive():
+    print(player2.name + " wins!")
+else:
+    print("It's a draw!")
