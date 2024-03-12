@@ -10,4 +10,13 @@ player2_health = 100
 print(player1_name + " vs. " + player2_name)
 print(str(player1_health) + " vs. " + str(player2_health))
 
-# Add While Loop next to check if they're alive (once class code is ready)
+# While Loop should in theory work if classes are set up right? Check this in the final later
+while player1.is_alive() and player2.is_alive():
+    print(player1.name + ": " + str(player1.health))
+    print(player2.name + ": " + str(player2.health))
+
+    damage = player1.attack(player2)
+    print(player1.name + " hits " + player2.name + " for " + str(damage))
+
+    damage = player2.attack(player1)
+    print(player2.name + " hits " + player1.name + " for " + str(damage))
